@@ -1,0 +1,149 @@
+#logo {
+    width: 100px;
+    object-fit: contain;
+    align-self: start;
+}
+
+#icon {
+    width: 40px;
+    object-fit: contain;
+}
+
+#searchicon {
+    width: 20px;
+    object-fit: contain;
+}
+
+#tabelle {}
+
+h1 {
+    color: green;
+}
+
+.zentriertes-div {
+    width: 50%;
+    /* oder die gewünschte Breite */
+    margin: 0 auto;
+    text-align: center;
+    /* Optional, wenn der Inhalt Text enthält */
+}
+
+.Fließtext {
+    font-size: 14pt;
+    font-family: Arial;
+}
+
+.footer-header-title {
+    color: green;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-left: 10px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+    max-height: 100px;
+    width: 100%;
+}
+
+.table-sortable {
+    width: 90%;
+}
+
+#inp {
+    width: 20%;
+    height: 40px;
+}
+
+#navigation[dir="rtl"] {
+    flex-direction: row-reverse;
+}
+
+#colTable {
+    width: 70%;
+}
+
+#colText {
+    width: 30%;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    #colTable {
+        width: 100%;
+    }
+
+    #colText {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .table-sortable {
+        width: 100%;
+    }
+
+    #inp {
+        width: 100%;
+        height: 40px;
+    }
+}
+
+.table-sortable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    border-bottom: 1px solid green;
+    color: green;
+    padding: 10px;
+}
+
+.table-sortable td {
+    padding: 10px;
+}
+
+.table-sortable tr:hover {
+    background-color: rgb(154, 245, 154);
+}
+
+.table-sortable tr:nth-child(even) {
+    /*background-color: #f2f2f2;*/
+}
+
+.table-sortable th {
+    cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+    content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+    content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+    margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+}

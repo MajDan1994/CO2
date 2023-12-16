@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <title>Rette unseren Planeten</title>
+    <link rel="icon" href="Bilder/logo.svg" type="image/x-icon">
+
+    <style>
+        .shop-image {
+            height: 180px;
+            object-fit: contain;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="navigation">
+        <div class="container-fluid">
+            <img src="Bilder/logo.svg" id="logo">
+            <b><a class="navbar-brand" href="index.html" style="color: green;">Rette unseren Planeten</a></b>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html"
+                        style="color: green; font-weight: 600;">Startseite</a>
+                    <a class="nav-link" href="Laenderuebersicht.html">Länderdaten</a>
+                    <a class="nav-link" href="Firmentabelle.html">Firmentabelle</a>
+                    <a class="nav-link" href="Contact.html">Kontakt</a>
+                    <a class="nav-link" href="Initiativen.html">Initiativen</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+    <main>
+        <div class="container">
+            <div>
+                <h1 style="color: green;">Willkommen Weltenretter!</h1>
+                <p class="Fließtext">Wir sind eine Initiative, die sich für die Umwelt einsetzt. Mit unseren Einsatz
+                    möchten wir
+                    erreichen, dass die
+                    Welt endlich aufhört wegzusschauen und sich gegen einen drohenden Untergang zu wehren.<br><br>
+                    Um euch mal einen Überblick zu gewähren, wie wenig sich Firmen aller Welt um unsere Umwelt
+                    kümmern,
+                    haben wir
+                    für Sie hier die Daten veröffentlich, wo sie alle Unternehmen und ihre Abgaswerte
+                    finden.<br><br></p>
+            </div>
+
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row justify-content-center row-cols-1 row-cols-sm-1 row-cols-lg-2 row-cols-md-1 g-3 mt-5">
+                    <div class="col">
+                        <div class="card" style="width: 300px; text-align: center;">
+                            <img src="Bilder/data.png" class="card-img-top shop-image" alt="Data">
+                            <div class="card-body">
+                                <h5 class="card-title">Unternehmen im Überblick</h5>
+                                <a href="Firmentabelle.html" class="btn btn-primary">Zeig mir mehr!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 300px; text-align: center;">
+                            <img src="Bilder/diagramm.png" class="card-img-top shop-image" alt="Diagramm">
+                            <div class="card-body">
+                                <h5 class="card-title">Länder im Überblick</h5>
+                                <a href="Laenderuebersicht.html" class="btn btn-primary">Zeig mir mehr!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="card border-0">
+                <div class="card-body">
+                    <h5 class="footer-header-title">Impressum</h5>
+                    <p class="card-text">
+                        Testfirma AG<br>
+                        Musterstraße 11<br>
+                        99999 Musterstadt<br>
+
+                        Tel. +49 (0) 999 / 999 - 0<br>
+                        Fax +49 (0) 999 / 999 - 999<br>
+                        E-Mail: test.firma@rette-unseren-planeten.com</p>
+                </div>
+            </div>
+
+            <div class="card border-0">
+                <div class="card-body">
+                    <h5 class="footer-header-title">Vorstand</h5>
+                    <p class="card-text">
+                        Dr. Max Mustermann, 1. Vorstand<br>
+                        Dr. Marianne Musterfrau, 2. Vorstand<br>
+                </div>
+            </div>
+
+            <div class="card border-0">
+                <div class="card-body">
+                    <h5 class="footer-header-title">Links</h5>
+                    <p class="card-text">
+                        AGB<br>
+                        Datenschutzerklärung<br>
+                </div>
+                <div>
+                    <img src="Bilder/letter.svg" id="icon">
+                    <img src="Bilder/location.svg" id="icon">
+                    <img src="Bilder/smartphone.svg" id="icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
